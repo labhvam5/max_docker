@@ -8,4 +8,7 @@ RUN npm install
 
 EXPOSE 80
 
-CMD [ "node", "server.js" ]
+# This is a annonymous volume in docker file example
+# VOLUME [ "/app/feedback" ]
+
+CMD [ "npm", "start" ]
