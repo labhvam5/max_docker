@@ -6,7 +6,10 @@ COPY . /app/
 
 RUN npm install
 
-EXPOSE 80
+# First we set the name and then we set the default value 
+ENV PORT 80
+
+EXPOSE $PORT
 
 # This is a annonymous volume in docker file example
 # VOLUME [ "/app/feedback" ]
